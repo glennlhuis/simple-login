@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffa500;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.login-container input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.login-container .show-password {
+  margin-left: -32px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f19d00;
+  font-size: 13px;
+}
+.login-container .show-password:hover {
+  background-color: #d48b02;
+}
+
+.login-container .submit {
+  background-color: #f19d00;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.login-container .submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.login-container .submit span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login-container .submit:hover span {
+  padding-right: 25px;
+}
+
+.login-container .submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
